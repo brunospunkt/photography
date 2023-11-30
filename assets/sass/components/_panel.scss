@@ -8,11 +8,12 @@
 
 	.panel {
 		@include padding(4em, 4em);
-		@include vendor('transform', 'translateY(100vh)');
+		@include vendor('transform', 'translateY(-100vh)');
 		@include vendor('transition', 'transform #{_duration(panel)} ease');
 		-webkit-overflow-scrolling: touch;
 		background: transparentize(_palette(bg), 0.025);
-		bottom: _size(header);
+		bottom: auto;
+		top: calc(#{_size(header)} - 1px);
 		left: 0;
 		max-height: calc(80vh - #{_size(header)});
 		overflow-y: auto;
@@ -21,7 +22,7 @@
 		z-index: _misc(z-index-base) + 1;
 
 		&.active {
-			@include vendor('transform', 'translateY(1px)');
+			@include vendor('transform', 'translateY(0)');
 		}
 
 		> .inner {
@@ -94,13 +95,6 @@
 		}
 
 		@include breakpoint(small) {
-			@include vendor('transform', 'translateY(-100vh)');
 			@include padding(4em, 2em);
-			bottom: auto;
-			top: calc(#{_size(header)} - 1px);
-
-			&.active {
-				@include vendor('transform', 'translateY(0)');
-			}
 		}
 	}
