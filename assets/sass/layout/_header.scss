@@ -95,18 +95,20 @@
 	}
 
 	@include breakpoint(small) {
+		#header {
 			h1 {
-				font-size: 0.9em;
+				font-size: 0.8em;
 			}
 
 			nav {
 				> ul {
 					> li {
 						a {
-							font-size: 0.9em;
+							font-size: 0.7em;
 							padding: 0 1.15em;
 						}
 					}
 				}
 			}
+		}
 	}
