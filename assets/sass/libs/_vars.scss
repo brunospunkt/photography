@@ -54,6 +54,7 @@
 // Font.
 	$font: (
 		family:				('Source Sans Pro', Helvetica, sans-serif),
+		family-header:      ('Marola', sans-serif),
 		family-fixed:		('Courier New', monospace),
 		weight:				300,
 		weight-bold:		300,
@@ -64,18 +65,18 @@
 
 // Palette.
 	$palette: (
-		bg:					#ffffff,
-		bg-alt:				#ffffff,
-		bg-overlay:			transparentize(#ffffff, 0.75),
-		bg-overlay-alt:		transparentize(#ffffff, 0.5),
-		bg-ie-overlay:		transparentize(#ffffff, 0.45),
-		bg-ie-overlay-alt:	transparentize(#ffffff, 0.2),
-		fg:					#535353,
-		fg-bold:			#000000,
-		fg-medium:			#424242,
-		fg-light:			#5e5d5d,
-		border:				#36383c,
-		border-bg:			#e5e5e5,
-		border-bg-alt:		#dfdfdf,
-		accent1:			#5186ff
+		bg:					#FFBB5C,
+		bg-alt:				#FFBB5C,
+		bg-overlay:			transparentize(#FFBB5C, 0.75),
+		bg-overlay-alt:		transparentize(#FFBB5C, 0.5),
+		bg-ie-overlay:		transparentize(#FFBB5C, 0.45),
+		bg-ie-overlay-alt:	transparentize(#FFBB5C, 0.2),
+		fg:					#E25E3E,
+		fg-bold:			#C63D2F,
+		fg-medium:			#E25E3E,
+		fg-light:			#FF9B50,
+		border:				#E25E3E,
+		border-bg:			#FF9B50,
+		border-bg-alt:		#FF9B50,
+		accent1:			#FF9B50
 	);

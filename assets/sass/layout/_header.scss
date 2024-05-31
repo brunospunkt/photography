@@ -28,6 +28,8 @@
 		width: 100%;
 		z-index: _misc(z-index-base) + 2;
 
+		font-family: 'Marola', sans-serif;
+
 		body.loading & {
 			@include vendor('transform', 'translateY(#{_size(header) * -0.85})');
 		}
@@ -39,6 +41,10 @@
 			line-height: 1;
 			margin: 0;
 			vertical-align: middle;
+
+			strong {
+				font-size: 2em;
+			}
 
 			a {
 				border: 0;
